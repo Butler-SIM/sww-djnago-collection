@@ -27,3 +27,7 @@ def put(self, request, *args, **kwargs):
 
     else:
         return JsonResponse(json_error("E0007"), status=status.HTTP_200_OK)
+
+
+#delete
+#s3_resource.delete_object(Bucket=AWS_STORAGE_BUCKET_NAME, Key=str(vehicle_image_url))
